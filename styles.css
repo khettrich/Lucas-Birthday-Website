@@ -1,0 +1,138 @@
+/* General */
+body {
+  margin:0;
+  font-family: 'Comic Neue', cursive;
+  color: #fff;
+  background: #1b1b2f;
+  overflow-x: hidden;
+}
+
+#background {
+  position: fixed;
+  top:0; left:0; right:0; bottom:0;
+  background: url('background.jpg') no-repeat center center/cover;
+  z-index:-2;
+}
+
+header {
+  text-align:center;
+  padding:20px;
+  text-shadow: 2px 2px #000;
+}
+
+h1 {
+  font-size:2.5em;
+  animation: rotateHeader 5s infinite linear;
+}
+
+@keyframes rotateHeader {
+  0% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+/* Countdown */
+#countdown {
+  font-size:1.5em;
+  margin-top:10px;
+}
+
+/* Party Details */
+#details, #rsvp-section, #photos {
+  background: rgba(0,0,0,0.5);
+  margin:20px auto;
+  padding:20px;
+  border-radius:15px;
+  max-width:600px;
+}
+
+.map-button {
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 15px;
+  background:#ffda4d;
+  color:#000;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* RSVP Form */
+form {
+  display:flex;
+  flex-direction:column;
+}
+
+form label {
+  margin:5px 0;
+}
+
+form input {
+  padding:5px;
+  margin-top:3px;
+  width:100%;
+  box-sizing:border-box;
+  border-radius:5px;
+  border:none;
+}
+
+form button {
+  margin-top:10px;
+  padding:10px;
+  background:#ff5c5c;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+#confirmation {
+  margin-top:10px;
+  font-weight:bold;
+  text-align:center;
+  color:#00ff99;
+}
+
+/* Floating Balloons */
+.floating-balloon {
+  position: absolute;
+  width:50px;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  from { bottom: -60px; }
+  to { top: 110%; }
+}
+
+/* Photo gallery */
+#photo-gallery img {
+  width:100px;
+  margin:5px;
+  border-radius:10px;
+  box-shadow: 1px 1px 5px #000;
+}
+
+/* Agenda list styling */
+#details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#details li::before {
+  content:"🎉 ";
+}
+
+/* Confirmation popup */
+.confirmation-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fffa8b;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  z-index: 9999;
+  color:#000;
+}
