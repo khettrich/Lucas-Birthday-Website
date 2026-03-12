@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>💎 Crystal Quest Birthday 💎</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="caveBackground"></div>
+<div id="crystalBackground"></div>
+
+<header>
+
+<div class="crystal-container">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Quartz_oisan.jpg/240px-Quartz_oisan.jpg" class="spinning-crystal">
+</div>
+
+<h1>💎 Crystal Quest Birthday 💎</h1>
+
+<div id="countdown"></div>
+
+</header>
+
+
+<section>
+
+<h2>Crystal Adventure Party</h2>
+
+<p>📅 July 12</p>
+<p>⏰ 2:00 PM</p>
+<p>📍 123 Adventure Lane</p>
+
+<p>
+Young explorers will hunt for hidden crystals and discover
+sparkling mineral treasures!
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Party Agenda</h2>
+
+<div class="agenda">
+
+<div>2:00 — Arrival & Crystal Exploration</div>
+<div>2:15 — Catch the Crystals Game</div>
+<div>2:45 — Crystal Treasure Hunt</div>
+<div>3:15 — Cake & Snacks</div>
+<div>3:30 — Free Play</div>
+<div>4:00 — Pickup</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>RSVP</h2>
+
+<form id="rsvpForm">
+
+<input id="parent" placeholder="Parent Name" required>
+<input id="child" placeholder="Child Name" required>
+<input id="kids" type="number" placeholder="Number of Kids" required>
+<input id="adults" type="number" placeholder="Number of Adults" required>
+<input id="diet" placeholder="Dietary Restrictions">
+
+<textarea id="message" placeholder="Message"></textarea>
+
+<button type="submit">Send RSVP</button>
+
+</form>
+
+</section>
+
+
+<section>
+
+<h2>Who's Coming?</h2>
+
+<p>Kids attending: <span id="kidsCount">0</span></p>
+<p>Adults attending: <span id="adultsCount">0</span></p>
+
+</section>
+
+
+<section>
+
+<h2>🗺 Treasure Map</h2>
+
+<p>Follow the map to the hidden crystal cave!</p>
+
+<button onclick="openMap()">Open in Maps</button>
+
+</section>
+
+
+<section>
+
+<h2>🎮 Catch the Crystals</h2>
+
+<div id="gameArea"></div>
+
+<p>Score: <span id="score">0</span></p>
+
+<button onclick="startGame()">Start Game</button>
+
+</section>
+
+
+<section>
+
+<h2>📸 Photo Upload</h2>
+
+<input type="file" id="photoUpload">
+
+<button onclick="uploadPhoto()">Upload Photo</button>
+
+<div id="gallery"></div>
+
+</section>
+
+<script src="script.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
